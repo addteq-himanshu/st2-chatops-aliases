@@ -1,0 +1,12 @@
+---
+name: "curl"
+runner_type: "remote-shell-script"
+description: "Run curl -vvv against given URL"
+enabled: true
+entry_point: "curl.sh"
+parameters:
+    server:
+        type: "string"
+        description: "URL"
+        required: true
+        position: 0
