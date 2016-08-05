@@ -1,0 +1,6 @@
+---
+name: "curl"
+description: "Perform a curl -vvv command"
+action_ref: "st2-chatops-aliases.curl"
+formats:
+  - "curl {{server}}"
