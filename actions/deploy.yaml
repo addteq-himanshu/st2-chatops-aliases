@@ -3,7 +3,7 @@ name: "deploy"
 runner_type: "local-shell-cmd"
 description: "Deploy Bamboo Release to Environment"
 enabled: true
-entry_point: "/home/stanley/bamboodeploy.sh"
+entry_point: "bamboodeploy.sh"
 parameters:
     environment:
         type: "string"
