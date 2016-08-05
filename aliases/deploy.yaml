@@ -1,0 +1,6 @@
+---
+name: "deploy"
+description: "Deploy a release to given environment"
+action_ref: "st2-chatops-aliases.deploy"
+formats:
+  - "deploy {{environment}} {{release}}"
