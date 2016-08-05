@@ -1,6 +1,6 @@
 ---
 name: "curl"
-runner_type: "remote-shell-script"
+runner_type: "local-shell-cmd"
 description: "Run curl -vvv against given URL"
 enabled: true
 entry_point: "curl.sh"
