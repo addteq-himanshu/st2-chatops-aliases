@@ -3,4 +3,6 @@ name: "instances"
 description: "List current server instances"
 action_ref: "st2-chatops-aliases.instances"
 formats:
-  - "```{{ execution.result.stdout }}```"
+  - "instances"
+result:
+  format: "```{{ execution.result.stdout }}```"
