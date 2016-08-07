@@ -1,0 +1,10 @@
+---
+name: "instances"
+runner_type: "run-local"
+description: "Get list of instances"
+enabled: true
+entry_point: ""
+parameters:
+  cmd:
+    immutable: true
+    default: 'doctl compute droplet list | grep jpm'
