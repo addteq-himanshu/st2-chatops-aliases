@@ -1,0 +1,8 @@
+---
+name: "service_status"
+description: "Checks the service status"
+action_ref: "st2-chatops-aliases.service_status"
+formats:
+  - "service_status {{service}}"
+result:
+  format: "{{ execution.result.stdout }}"
