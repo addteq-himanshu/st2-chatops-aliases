@@ -1,10 +1,11 @@
 ---
-name: appdynamics_service_chat
-pack: st2-chatops-aliases
+name: st2-chatops-aliases.appdynamics_service_chat
 description: Post to chat for Appdynamics events
 enabled: true
 trigger:
  type: core.st2.webhook
+ parameters:
+   url: "sample"
 action:
  ref: chatops.post_message
  parameters:
