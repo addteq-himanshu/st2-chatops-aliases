@@ -5,4 +5,4 @@ action_ref: "st2-chatops-aliases.instances"
 formats:
   - "instances"
 result:
-  format: "```{{ execution.result.stdout }}```"
+  format: "{{ execution.result.stdout }}"
