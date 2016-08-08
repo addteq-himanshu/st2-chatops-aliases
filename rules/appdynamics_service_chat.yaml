@@ -4,10 +4,9 @@ pack: st2-chatops-aliases
 description: Post to chat for Appdynamics events
 enabled: true
 trigger:
- type: st2.generic.notifytrigger
+ type: st2-chatops-aliases.appdynamics_service_chat
 action:
  ref: chatops.post_message
  parameters:
-   message: NAGIOS {{trigger.service}} ID:{{trigger.event_id}} STATE:{{trigger.state}}[{{ trigger.state_id }}]/{{trigger.state_type}}
-     {{trigger.msg}}
+   message: Appdynamics {{trigger.msg}}
    channel: 'hubot_testing'
