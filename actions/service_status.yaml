@@ -10,6 +10,6 @@ parameters:
         description: "Service Name"
         required: true
         position: 0
-cmd:
-      immutable: true
-      default: "service {{service}} status"
+    cmd:
+        immutable: true
+        default: "service {{service}} status"
