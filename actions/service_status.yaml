@@ -1,0 +1,13 @@
+---
+name: "deploy"
+runner_type: "local-shell-cmd"
+sudo: true
+description: "Check service status"
+enabled: true
+cmd: "service {{service}} status"
+parameters:
+    service:
+        type: "string"
+        description: "Service Name"
+        required: true
+        position: 0
