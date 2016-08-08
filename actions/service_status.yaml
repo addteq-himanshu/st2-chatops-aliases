@@ -1,5 +1,5 @@
 ---
-name: "deploy"
+name: "service_status"
 runner_type: "local-shell-cmd"
 sudo: true
 description: "Check service status"
