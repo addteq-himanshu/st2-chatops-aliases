@@ -4,7 +4,7 @@ pack: st2-chatops-aliases
 description: Post to chat for Appdynamics events
 enabled: true
 trigger:
- type: st2-chatops-aliases.appdynamics_service_chat
+ type: core.st2.webhook
 action:
  ref: chatops.post_message
  parameters:
