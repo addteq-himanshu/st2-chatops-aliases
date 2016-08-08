@@ -1,7 +1,6 @@
 ---
 name: "service_status"
 runner_type: "run-local"
-sudo: true
 description: "Check service status"
 enabled: true
 parameters:
@@ -12,4 +11,4 @@ parameters:
         position: 0
     cmd:
         immutable: true
-        default: "service {{service}} status"
+        default: "sudo service {{service}} status"
